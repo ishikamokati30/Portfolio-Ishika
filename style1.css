@@ -26,6 +26,90 @@
   color: #00adb5;
 }
 
+.achievements-banner {
+  background: linear-gradient(135deg, #00adb5 0%, #2bdddd 100%);
+  padding: 20px;
+  text-align: center;
+  animation: slideDown 0.6s ease;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.banner-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.banner-item .icon {
+  font-size: 1.5rem;
+}
+
+.banner-item strong {
+  color: #333;
+  font-weight: 700;
+}
+
+.banner-divider {
+  color: #1a1a1a;
+  opacity: 0.5;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.banner-link {
+  background: rgba(26, 26, 26, 0.2);
+  color: #1a1a1a;
+  padding: 6px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(26, 26, 26, 0.3);
+}
+
+.banner-link:hover {
+  background: rgba(26, 26, 26, 0.4);
+  transform: translateX(3px);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-content {
+    gap: 10px;
+    font-size: 0.85rem;
+  }
+
+  .banner-item .icon {
+    font-size: 1.2rem;
+  }
+
+  .banner-divider {
+    display: inline;
+  }
+}
+
 .about {
   width: 100%;
   min-height: 100vh;
