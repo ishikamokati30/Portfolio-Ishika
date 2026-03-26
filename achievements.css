@@ -16,7 +16,7 @@ body {
 
 .logo {
   font-size: 1.5rem;
-  color: #00adb5;
+  color: #d9e0e0;
   font-weight: bold;
 }
 
@@ -37,26 +37,10 @@ body {
   color: #00adb5;
 }
 .achievements-container {
-  padding: 80px 8%;
+  padding: 30px 8%;   
   background-image: url('backg.png');
   background-size: cover;
   background-position: center;
-}
-
-/* HERO */
-.achievements-hero {
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.achievements-hero h1 {
-  font-size: 3rem;
-  color: #00adb5;
-  margin-bottom: 10px;
-}
-
-.achievements-hero p {
-  color: #aaa;
 }
 
 /* MAIN CARD STYLE (same as projects) */
@@ -182,44 +166,22 @@ body {
 
 .achievements-hero {
   text-align: center;
-  padding: 100px 20px 80px;
+  padding: 40px 20px 30px;
   position: relative;
   overflow: hidden;
   background: radial-gradient(circle at top, #1f2a2a, #0f0f0f 70%);
 }
 
-/* glowing background effect */
-.achievements-hero::before {
-  content: "";
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background: #00adb5;
-  filter: blur(120px);
-  opacity: 0.15;
-  top: -100px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 0;
-}
-
-/* Title */
 .achievements-hero h1 {
-  font-size: 3.2rem;
-  font-weight: 700;
-  color: #00adb5;
-  position: relative;
-  z-index: 1;
-  letter-spacing: 1px;
+  font-size: 2.2rem;
+  color: #dce4e5;
+    animation: fadeSlide 1s ease;
 }
 
-/* Subtitle */
 .achievements-hero p {
-  margin-top: 15px;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
+  animation: fadeSlide 1.2s ease;
   color: #bbb;
-  position: relative;
-  z-index: 1;
 }
 
 /* glowing divider line */
@@ -230,18 +192,10 @@ body {
   left: 50%;
   width: 80%;
   height: 2px;
-  background: linear-gradient(to right, transparent, #00adb5, transparent);
+  background: linear-gradient(to right, transparent, #dce0e1, transparent);
   transform: translateX(-50%);
 }
 
-/* subtle animation */
-.achievements-hero h1 {
-  animation: fadeSlide 1s ease;
-}
-
-.achievements-hero p {
-  animation: fadeSlide 1.2s ease;
-}
 
 @keyframes fadeSlide {
   from {
