@@ -93,16 +93,30 @@ body {
 
 .certifications-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 30px;
-  justify-content: center;
+  align-items: stretch;
 }
 .cert-card {
   background: rgba(0, 0, 0, 0.75);
   border-radius: 15px;
   padding: 25px;
+  margin: 0;
+  max-width: none;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   transition: 0.3s;
+}
+
+.cert-card p {
+  margin-bottom: 0;
+}
+
+.cert-card .btn {
+  margin-top: auto;
 }
 
 .cert-card:hover {
@@ -243,6 +257,8 @@ body {
   background: rgba(0, 0, 0, 0.75);
   border-radius: 15px;
   padding: 25px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   transition: 0.3s;
 }
@@ -260,6 +276,10 @@ body {
 .hackathon-card p {
   color: #ccc;
   line-height: 1.6;
+}
+
+.hackathon-card .btn {
+  margin-top: auto;
 }
 
 @media (max-width: 768px) {
