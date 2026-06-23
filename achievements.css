@@ -210,6 +210,87 @@ body {
   transform: translateX(-50%);
 }
 
+.internships-section {
+  min-height: 100vh;
+  padding: 80px 8%;
+  background-image: url('backg.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.internships-section .section-title {
+  font-size: 2rem;
+  margin: 0 0 50px;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #00adb5;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.project-card {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  padding: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 900px;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 173, 181, 0.25);
+}
+
+.project-card h2 {
+  color: #00adb5;
+  margin: 0 0 12px;
+}
+
+.project-card p {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.project-card .tech {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 18px;
+  border: 1px solid #00adb5;
+  border-radius: 6px;
+  background: #00adb5;
+  color: #111;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.project-links a:hover {
+  background: transparent;
+  color: #00adb5;
+}
+
 
 @keyframes fadeSlide {
   from {
@@ -305,8 +386,17 @@ body {
     padding: 60px 5%;
   }
 
+  .internships-section {
+    padding: 60px 5%;
+  }
+
+  .internships-section .section-title {
+    font-size: 2.4rem;
+  }
+
   .achievement-card,
   .cert-card,
+  .project-card,
   .hackathon-card {
     padding: 24px;
   }
